@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Neovim Native LSP - Yarn PnP (v2) & TypeScript Language Server
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a repo I've been using to debug and demo neovim's native LSP implementation with a yarn v2 PnP project and the TypeScript language server.
 
-## Available Scripts
+## Requirements
 
-In the project directory, you can run:
+- [Neovim 0.5](https://neovim.io/) with plugins
+  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - config to use TS language server with Neovim's native LSP
+  - [vim-rzip](https://github.com/lbrayner/vim-rzip) - open yarn PnP's `.zip` files
+- [typescript-language-server](https://github.com/theia-ide/typescript-language-server) installed somewhere
+  - by default nvim-lspconfig will want it globally installed
+- [yarn](https://yarnpkg.com/) package manager
+  - v1 needs to be globally installed
 
-### `yarn start`
+## Aims
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Support running of tsserver in yarn v2 projects
+  - https://github.com/theia-ide/typescript-language-server/pull/220
+- Support opening of yarn archive files for things like go-to-definition, etc.
+  - https://github.com/neovim/neovim/pull/14959
+  - https://github.com/lbrayner/vim-rzip/issues/15
+- Support Yarn PnP virtual files
+  - https://github.com/yarnpkg/berry/pull/3041
