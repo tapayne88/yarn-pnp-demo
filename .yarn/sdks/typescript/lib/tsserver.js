@@ -68,6 +68,11 @@ const moduleWrapper = tsserver => {
             str = resolve(`zipfile:${str}`);
           } break;
 
+          case `neovim`: {
+            str = normalize(resolved).replace(/\.zip\//, `.zip::`);
+            str = `zipfile:${str}`;
+          } break;
+
           default: {
             str = `zip:${str}`;
           } break;
