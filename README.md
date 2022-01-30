@@ -6,8 +6,8 @@ This is a repo I've been using to debug and demo neovim's native LSP implementat
 
 Checkout the different branches to run.
 
-- [yarn v2](https://github.com/tapayne88/yarn-pnp-demo/tree/yarn-v2)
-- [yarn v3](https://github.com/tapayne88/yarn-pnp-demo/tree/yarn-v3)
+- [`yarn-v2`](https://github.com/tapayne88/yarn-pnp-demo/tree/yarn-v2)
+- [`yarn-v3`](https://github.com/tapayne88/yarn-pnp-demo/tree/yarn-v3)
 
 ## Requirements
 
